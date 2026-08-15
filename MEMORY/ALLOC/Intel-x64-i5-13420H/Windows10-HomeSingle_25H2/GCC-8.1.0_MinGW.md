@@ -1,354 +1,354 @@
 
-# MEMORY (Intel-x64-i5-13420H WSL_Ubuntu-22.04.5_LTS GCC-11.4.0)
+# MEMORY (ALLOC) (Intel-x64-i5-13420H Windows10-HomeSingle_25H2 GCC-8.1.0_MinGW)
 
 **Status:** __(2026/08/15) Pass__
 
 ## Performance Results:
 
-Compiled with (BASH): `gcc test.c && ./a.out`
+Compiled with (CMD): `gcc test.c && a.exe`
 
 ```c
 malloc(16):
-  total:   65.483 ms - average: 6.548 ns
+  total:   251.127 ms - average: 25.113 ns
 
 ALLOC(16):
-  total:   110.051 ms - average: 11.005 ns
+  total:   333.178 ms - average: 33.318 ns
 
 -----------------------------
 malloc(64):
-  total:   66.300 ms - average: 6.630 ns
+  total:   251.548 ms - average: 25.155 ns
 
 ALLOC(64):
-  total:   111.890 ms - average: 11.189 ns
+  total:   339.164 ms - average: 33.916 ns
 
 -----------------------------
 malloc(256):
-  total:   64.024 ms - average: 6.402 ns
+  total:   247.543 ms - average: 24.754 ns
 
 ALLOC(256):
-  total:   110.538 ms - average: 11.054 ns
+  total:   342.563 ms - average: 34.256 ns
 
 -----------------------------
 malloc(1024):
-  total:   65.837 ms - average: 6.584 ns
+  total:   246.637 ms - average: 24.664 ns
 
 ALLOC(1024):
-  total:   196.329 ms - average: 19.633 ns
+  total:   349.801 ms - average: 34.980 ns
 
 -----------------------------
 malloc(4096):
-  total:   146.631 ms - average: 14.663 ns
+  total:   247.831 ms - average: 24.783 ns
 
 ALLOC(4096):
-  total:   197.051 ms - average: 19.705 ns
+  total:   363.068 ms - average: 36.307 ns
 
 -----------------------------
 malloc(16384):
-  total:   157.954 ms - average: 15.795 ns
+  total:   247.741 ms - average: 24.774 ns
 
 ALLOC(16384):
-  total:   200.505 ms - average: 20.050 ns
+  total:   363.565 ms - average: 36.357 ns
 
 -----------------------------
 malloc(80200):
-  total:   156.740 ms - average: 15.674 ns
+  total:   837.075 ms - average: 83.708 ns
 
 ALLOC(80200):
-  total:   198.121 ms - average: 19.812 ns
+  total:   363.894 ms - average: 36.389 ns
 
 -----------------------------
 malloc(580200):
-  total:   154.833 ms - average: 15.483 ns
+  total:   838.740 ms - average: 83.874 ns
 
 ALLOC(580200):
-  total:   203.087 ms - average: 20.309 ns
+  total:   364.522 ms - average: 36.452 ns
 
 -----------------------------
 malloc(1000000):
-  total:   151.832 ms - average: 15.183 ns
+  total:   838.865 ms - average: 83.886 ns
 
 ALLOC(1000000):
-  total:   197.220 ms - average: 19.722 ns
+  total:   364.372 ms - average: 36.437 ns
 
 -----------------------------
 ```
 
 ----
 
-Compiled with (BASH): `gcc test.c -O0 && ./a.out`
+Compiled with (CMD): `gcc test.c -O0 && a.exe`
 
 ```c
 malloc(16):
-  total:   64.897 ms - average: 6.490 ns
+  total:   248.830 ms - average: 24.883 ns
 
 ALLOC(16):
-  total:   108.467 ms - average: 10.847 ns
+  total:   334.964 ms - average: 33.496 ns
 
 -----------------------------
 malloc(64):
-  total:   65.363 ms - average: 6.536 ns
+  total:   251.338 ms - average: 25.134 ns
 
 ALLOC(64):
-  total:   109.121 ms - average: 10.912 ns
+  total:   343.623 ms - average: 34.362 ns
 
 -----------------------------
 malloc(256):
-  total:   64.754 ms - average: 6.475 ns
+  total:   251.291 ms - average: 25.129 ns
 
 ALLOC(256):
-  total:   113.369 ms - average: 11.337 ns
+  total:   346.558 ms - average: 34.656 ns
 
 -----------------------------
 malloc(1024):
-  total:   67.590 ms - average: 6.759 ns
+  total:   247.723 ms - average: 24.772 ns
 
 ALLOC(1024):
-  total:   201.088 ms - average: 20.109 ns
+  total:   350.471 ms - average: 35.047 ns
 
 -----------------------------
 malloc(4096):
-  total:   147.975 ms - average: 14.797 ns
+  total:   248.885 ms - average: 24.889 ns
 
 ALLOC(4096):
-  total:   200.226 ms - average: 20.023 ns
+  total:   363.269 ms - average: 36.327 ns
 
 -----------------------------
 malloc(16384):
-  total:   157.148 ms - average: 15.715 ns
+  total:   247.016 ms - average: 24.702 ns
 
 ALLOC(16384):
-  total:   201.718 ms - average: 20.172 ns
+  total:   366.944 ms - average: 36.694 ns
 
 -----------------------------
 malloc(80200):
-  total:   152.916 ms - average: 15.292 ns
+  total:   840.782 ms - average: 84.078 ns
 
 ALLOC(80200):
-  total:   198.833 ms - average: 19.883 ns
+  total:   364.830 ms - average: 36.483 ns
 
 -----------------------------
 malloc(580200):
-  total:   151.531 ms - average: 15.153 ns
+  total:   842.536 ms - average: 84.254 ns
 
 ALLOC(580200):
-  total:   201.950 ms - average: 20.195 ns
+  total:   364.248 ms - average: 36.425 ns
 
 -----------------------------
 malloc(1000000):
-  total:   154.376 ms - average: 15.438 ns
+  total:   841.239 ms - average: 84.124 ns
 
 ALLOC(1000000):
-  total:   205.782 ms - average: 20.578 ns
-
-----------------------------
-```
-
-----
-
-Compiled with (BASH): `gcc test.c -O1 && ./a.out`
-
-```c
-malloc(16):
-  total:   58.203 ms - average: 5.820 ns
-
-ALLOC(16):
-  total:   96.049 ms - average: 9.605 ns
-
------------------------------
-malloc(64):
-  total:   59.003 ms - average: 5.900 ns
-
-ALLOC(64):
-  total:   97.017 ms - average: 9.702 ns
-
------------------------------
-malloc(256):
-  total:   58.268 ms - average: 5.827 ns
-
-ALLOC(256):
-  total:   96.865 ms - average: 9.687 ns
-
------------------------------
-malloc(1024):
-  total:   61.851 ms - average: 6.185 ns
-
-ALLOC(1024):
-  total:   189.258 ms - average: 18.926 ns
-
------------------------------
-malloc(4096):
-  total:   150.330 ms - average: 15.033 ns
-
-ALLOC(4096):
-  total:   185.259 ms - average: 18.526 ns
-
------------------------------
-malloc(16384):
-  total:   153.612 ms - average: 15.361 ns
-
-ALLOC(16384):
-  total:   188.803 ms - average: 18.880 ns
-
------------------------------
-malloc(80200):
-  total:   155.702 ms - average: 15.570 ns
-
-ALLOC(80200):
-  total:   189.328 ms - average: 18.933 ns
-
------------------------------
-malloc(580200):
-  total:   155.897 ms - average: 15.590 ns
-
-ALLOC(580200):
-  total:   189.597 ms - average: 18.960 ns
-
------------------------------
-malloc(1000000):
-  total:   151.871 ms - average: 15.187 ns
-
-ALLOC(1000000):
-  total:   190.655 ms - average: 19.066 ns
+  total:   366.042 ms - average: 36.604 ns
 
 -----------------------------
 ```
 
 ----
 
-Compiled with (BASH): `gcc test.c -O2 && ./a.out`
+Compiled with (CMD): `gcc test.c -O1 && a.exe`
 
 ```c
 malloc(16):
-  total:   62.224 ms - average: 6.222 ns
+  total:   253.103 ms - average: 25.310 ns
 
 ALLOC(16):
-  total:   89.557 ms - average: 8.956 ns
+  total:   287.189 ms - average: 28.719 ns
 
 -----------------------------
 malloc(64):
-  total:   61.608 ms - average: 6.161 ns
+  total:   250.938 ms - average: 25.094 ns
 
 ALLOC(64):
-  total:   88.623 ms - average: 8.862 ns
+  total:   287.919 ms - average: 28.792 ns
 
 -----------------------------
 malloc(256):
-  total:   62.595 ms - average: 6.259 ns
+  total:   251.556 ms - average: 25.156 ns
 
 ALLOC(256):
-  total:   87.030 ms - average: 8.703 ns
+  total:   282.820 ms - average: 28.282 ns
 
 -----------------------------
 malloc(1024):
-  total:   60.092 ms - average: 6.009 ns
+  total:   249.705 ms - average: 24.971 ns
 
 ALLOC(1024):
-  total:   177.378 ms - average: 17.738 ns
+  total:   282.463 ms - average: 28.246 ns
 
 -----------------------------
 malloc(4096):
-  total:   158.412 ms - average: 15.841 ns
+  total:   249.438 ms - average: 24.944 ns
 
 ALLOC(4096):
-  total:   177.447 ms - average: 17.745 ns
+  total:   296.700 ms - average: 29.670 ns
 
 -----------------------------
 malloc(16384):
-  total:   154.969 ms - average: 15.497 ns
+  total:   250.191 ms - average: 25.019 ns
 
 ALLOC(16384):
-  total:   187.303 ms - average: 18.730 ns
+  total:   297.842 ms - average: 29.784 ns
 
 -----------------------------
 malloc(80200):
-  total:   155.696 ms - average: 15.570 ns
+  total:   837.168 ms - average: 83.717 ns
 
 ALLOC(80200):
-  total:   186.525 ms - average: 18.652 ns
+  total:   298.418 ms - average: 29.842 ns
 
 -----------------------------
 malloc(580200):
-  total:   158.518 ms - average: 15.852 ns
+  total:   838.537 ms - average: 83.854 ns
 
 ALLOC(580200):
-  total:   184.136 ms - average: 18.414 ns
+  total:   296.688 ms - average: 29.669 ns
 
 -----------------------------
 malloc(1000000):
-  total:   159.837 ms - average: 15.984 ns
+  total:   839.134 ms - average: 83.913 ns
 
 ALLOC(1000000):
-  total:   185.888 ms - average: 18.589 ns
+  total:   296.131 ms - average: 29.613 ns
 
 -----------------------------
 ```
 
 ----
 
-Compiled with (BASH): `gcc test.c -O3 && ./a.out`
+Compiled with (CMD): `gcc test.c -O2 && a.exe`
 
 ```c
 malloc(16):
-  total:   58.627 ms - average: 5.863 ns
+  total:   253.725 ms - average: 25.373 ns
 
 ALLOC(16):
-  total:   81.525 ms - average: 8.153 ns
+  total:   311.613 ms - average: 31.161 ns
 
 -----------------------------
 malloc(64):
-  total:   60.259 ms - average: 6.026 ns
+  total:   248.301 ms - average: 24.830 ns
 
 ALLOC(64):
-  total:   82.301 ms - average: 8.230 ns
+  total:   320.079 ms - average: 32.008 ns
 
 -----------------------------
 malloc(256):
-  total:   57.891 ms - average: 5.789 ns
+  total:   252.757 ms - average: 25.276 ns
 
 ALLOC(256):
-  total:   82.127 ms - average: 8.213 ns
+  total:   316.957 ms - average: 31.696 ns
 
 -----------------------------
 malloc(1024):
-  total:   59.021 ms - average: 5.902 ns
+  total:   249.504 ms - average: 24.950 ns
 
 ALLOC(1024):
-  total:   174.280 ms - average: 17.428 ns
+  total:   316.806 ms - average: 31.681 ns
 
 -----------------------------
 malloc(4096):
-  total:   149.036 ms - average: 14.904 ns
+  total:   248.241 ms - average: 24.824 ns
 
 ALLOC(4096):
-  total:   173.838 ms - average: 17.384 ns
+  total:   332.350 ms - average: 33.235 ns
 
 -----------------------------
 malloc(16384):
-  total:   153.703 ms - average: 15.370 ns
+  total:   247.605 ms - average: 24.760 ns
 
 ALLOC(16384):
-  total:   177.135 ms - average: 17.714 ns
+  total:   333.954 ms - average: 33.395 ns
 
 -----------------------------
 malloc(80200):
-  total:   152.950 ms - average: 15.295 ns
+  total:   842.971 ms - average: 84.297 ns
 
 ALLOC(80200):
-  total:   180.891 ms - average: 18.089 ns
+  total:   330.658 ms - average: 33.066 ns
 
 -----------------------------
 malloc(580200):
-  total:   152.631 ms - average: 15.263 ns
+  total:   841.733 ms - average: 84.173 ns
 
 ALLOC(580200):
-  total:   174.565 ms - average: 17.456 ns
+  total:   329.615 ms - average: 32.961 ns
 
 -----------------------------
 malloc(1000000):
-  total:   153.607 ms - average: 15.361 ns
+  total:   842.765 ms - average: 84.276 ns
 
 ALLOC(1000000):
-  total:   177.416 ms - average: 17.742 ns
+  total:   336.416 ms - average: 33.642 ns
+
+-----------------------------
+```
+
+----
+
+Compiled with (CMD): `gcc test.c -O3 && a.exe`
+
+```c
+malloc(16):
+  total:   251.035 ms - average: 25.104 ns
+
+ALLOC(16):
+  total:   309.628 ms - average: 30.963 ns
+
+-----------------------------
+malloc(64):
+  total:   251.362 ms - average: 25.136 ns
+
+ALLOC(64):
+  total:   322.183 ms - average: 32.218 ns
+
+-----------------------------
+malloc(256):
+  total:   251.762 ms - average: 25.176 ns
+
+ALLOC(256):
+  total:   316.401 ms - average: 31.640 ns
+
+-----------------------------
+malloc(1024):
+  total:   248.666 ms - average: 24.867 ns
+
+ALLOC(1024):
+  total:   319.359 ms - average: 31.936 ns
+
+-----------------------------
+malloc(4096):
+  total:   248.689 ms - average: 24.869 ns
+
+ALLOC(4096):
+  total:   332.078 ms - average: 33.208 ns
+
+-----------------------------
+malloc(16384):
+  total:   246.293 ms - average: 24.629 ns
+
+ALLOC(16384):
+  total:   334.715 ms - average: 33.471 ns
+
+-----------------------------
+malloc(80200):
+  total:   840.514 ms - average: 84.051 ns
+
+ALLOC(80200):
+  total:   330.926 ms - average: 33.093 ns
+
+-----------------------------
+malloc(580200):
+  total:   839.521 ms - average: 83.952 ns
+
+ALLOC(580200):
+  total:   329.715 ms - average: 32.971 ns
+
+-----------------------------
+malloc(1000000):
+  total:   849.857 ms - average: 84.986 ns
+
+ALLOC(1000000):
+  total:   331.361 ms - average: 33.136 ns
 
 -----------------------------
 ```
@@ -467,7 +467,7 @@ int main(void)
 ## Issues / Bugs
 
  *  (2026/08/15) - (Still Present)
-   * Slow compared to `malloc`
+   * In value 16384 or smaller, it works slower than `malloc`
 
 ----
 
