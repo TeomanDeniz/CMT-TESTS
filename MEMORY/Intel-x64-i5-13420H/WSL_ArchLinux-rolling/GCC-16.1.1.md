@@ -1,5 +1,5 @@
 
-# TESTS - MEMORY (Intel-x64-i5-13420H WSL_ArchLinux-rolling GCC-16.1.1_Linux)
+# MEMORY (Intel-x64-i5-13420H WSL_ArchLinux-rolling GCC-16.1.1)
 
 **Status:** __(2026/08/15) Pass__
 
